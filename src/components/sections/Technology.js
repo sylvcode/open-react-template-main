@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
+import { Icon } from "@iconify/react";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -11,7 +12,7 @@ const defaultProps = {
   ...SectionTilesProps.defaults,
 };
 
-const Testimonial = ({
+const Technology = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -40,9 +41,8 @@ const Testimonial = ({
   const tilesClasses = classNames("tiles-wrap", pushLeft && "push-left");
 
   const sectionHeader = {
-    title: "Autopilot - from idea to production",
-    paragraph:
-      "Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.",
+    title: "Our Playground",
+    paragraph: "",
   };
 
   return (
@@ -58,10 +58,7 @@ const Testimonial = ({
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum cillum dolore eu fugiat.
+                    <Icon icon="logos:aws" width="200" />
                   </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
@@ -129,7 +126,7 @@ const Testimonial = ({
   );
 };
 
-Testimonial.propTypes = propTypes;
-Testimonial.defaultProps = defaultProps;
+Technology.propTypes = propTypes;
+Technology.defaultProps = defaultProps;
 
-export default Testimonial;
+export default Technology;

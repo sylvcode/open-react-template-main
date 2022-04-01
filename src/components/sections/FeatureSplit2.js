@@ -14,7 +14,7 @@ const defaultProps = {
   ...SectionSplitProps.defaults,
 };
 
-const FeaturesSplit = ({
+const FeatureSplit2 = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -51,10 +51,10 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: "Succes Stories",
-    text: "IoT Platform",
+    title: "",
+    text: "Finance Platform",
     paragraph:
-      "Our client is a leading company producing heating, cooling, and hot water products. Their mission is to enhance its products with digital services.",
+      "Our client a sharia-compliant digital bank. Decided to design a digital bank for people with international lifestyles who want to manage their money easily.",
   };
 
   return (
@@ -70,10 +70,10 @@ const FeaturesSplit = ({
               >
                 <h3 className="mt-0 mb-12">Challenges</h3>
                 <p className="m-0">
-                  The amount of data that needed to be persisted and processed
-                  was a significant challenge. Coupled with the fact that the
-                  platform and infrastructure wasn't in place made the project
-                  an interesting challenge.
+                  Building a financial platform from the ground up in a
+                  regulated area such as finance is never a simple task.
+                  Building security and auditing into a fast-moving platform
+                  made this project a challenge we couldn't skip.
                 </p>
               </div>
               <div
@@ -117,15 +117,14 @@ const FeaturesSplit = ({
               >
                 <h3 className=" mt-0 mb-12">Implementation</h3>
                 <p className="m-0">
-                  We designed the platform and put into place the infrastructure
-                  components to cope with the data. The cloud infrastructure was
-                  deployed using terraform and helm. The microservices were
-                  deployed using the GitOps pattern with fluxcd and kustomize.
-                  Performance tests were written to validate the scalability of
-                  the platform and individual components. Continuous monitoring
-                  and logging were designed on top of open source solutions with
-                  a focus on automation (security updates, version updates,
-                  auto-scaling resources).
+                  We designed a serverless platform that was able to scale from
+                  0 to unlimited from the beginning. Security was a first-class
+                  citizen from the start and not an afterthought. By building
+                  security into the platform from the start we were able to
+                  comply with regulators without sacrificing feature delivery.
+                  We relied heavily on SaaS providers for SIEM, logging, and
+                  alerting. This allowed us to focus on the core product we were
+                  building.
                 </p>
               </div>
               <div
@@ -134,12 +133,12 @@ const FeaturesSplit = ({
               >
                 <h3 className="mt-0 mb-12">Results</h3>
                 <p className="m-0">
-                  Developers were quicker to release features. And the business
-                  was able to onboard 40.000 devices within a month of the
-                  initial release. KPIs that we used to track our results
-                  included: Deployment frequency Lead time Number of defects
-                  found in production Meantime to repair Meantime between
-                  failures.
+                  A fully functional and secure financial platform that had low
+                  running costs with little ongoing maintenance costs. By
+                  utilizing a serverless architecture we were able to remove
+                  responsibilities from our daily work and were able to focus on
+                  what mattered most. In just a little over six month, the
+                  platform was ready for go-live.
                 </p>
               </div>
             </div>
@@ -150,7 +149,7 @@ const FeaturesSplit = ({
   );
 };
 
-FeaturesSplit.propTypes = propTypes;
-FeaturesSplit.defaultProps = defaultProps;
+FeatureSplit2.propTypes = propTypes;
+FeatureSplit2.defaultProps = defaultProps;
 
-export default FeaturesSplit;
+export default FeatureSplit2;

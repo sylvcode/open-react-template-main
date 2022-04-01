@@ -14,7 +14,7 @@ const defaultProps = {
   ...SectionSplitProps.defaults,
 };
 
-const FeaturesSplit = ({
+const FeaturesSplit3 = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -51,10 +51,9 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: "Succes Stories",
-    text: "IoT Platform",
-    paragraph:
-      "Our client is a leading company producing heating, cooling, and hot water products. Their mission is to enhance its products with digital services.",
+    title: "Autopilot - from idea to production",
+
+    paragraph: "How to work with us",
   };
 
   return (
@@ -68,45 +67,30 @@ const FeaturesSplit = ({
                 className="split-item-content center-content-mobile reveal-from-left"
                 data-reveal-container=".split-item"
               >
-                <h3 className="mt-0 mb-12">Challenges</h3>
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  Focusing on Outcomes that matter
+                </div>
+
                 <p className="m-0">
-                  The amount of data that needed to be persisted and processed
-                  was a significant challenge. Coupled with the fact that the
-                  platform and infrastructure wasn't in place made the project
-                  an interesting challenge.
+                  Rather than issuing detailed and prescriptive rules and
+                  requirements for every feature. Our customers provide us with
+                  a set of high-level outcomes. Together we define (impact
+                  mapping) metrics to measure the outcomes. Finally we start
+                  building and schedule weekly meetings where we discuss the
+                  metrics.
                 </p>
               </div>
               <div
                 className="split-item-content center-content-mobile reveal-from-right"
                 data-reveal-container=".split-item"
               >
-                <h3 className="mt-0 mb-12">Technology</h3>
-                <div className="icons">
-                  <span>
-                    {" "}
-                    <Icon icon="vscode-icons:file-type-azure" />
-                  </span>
-                  <span>
-                    <Icon icon="logos:kubernetes" />
-                  </span>
-                  <span>
-                    <Icon icon="logos:helm" />
-                  </span>
-                  <span>
-                    <Icon icon="logos:mongodb" />
-                  </span>
-                  <span>
-                    <Icon icon="simple-icons:timescale" />
-                  </span>
-                  <span>
-                    <Icon icon="bxl:spring-boot" />
-                  </span>
-                  <span>Monitoring/Logging + Instana</span>
-                  <span>Kustomize</span>
-                  <br></br>
-                  <span>Timescale DB</span>
-                  <span></span>
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  Benefits
                 </div>
+                <p className="m-0">
+                  Less project management overhead Faster development cycles
+                  Truly adaptable and flexible.
+                </p>
               </div>
             </div>
 
@@ -139,7 +123,7 @@ const FeaturesSplit = ({
                   initial release. KPIs that we used to track our results
                   included: Deployment frequency Lead time Number of defects
                   found in production Meantime to repair Meantime between
-                  failures.
+                  failures
                 </p>
               </div>
             </div>
@@ -150,7 +134,7 @@ const FeaturesSplit = ({
   );
 };
 
-FeaturesSplit.propTypes = propTypes;
-FeaturesSplit.defaultProps = defaultProps;
+FeaturesSplit3.propTypes = propTypes;
+FeaturesSplit3.defaultProps = defaultProps;
 
-export default FeaturesSplit;
+export default FeaturesSplit3;
