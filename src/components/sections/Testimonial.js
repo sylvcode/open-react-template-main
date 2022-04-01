@@ -40,9 +40,8 @@ const Testimonial = ({
   const tilesClasses = classNames("tiles-wrap", pushLeft && "push-left");
 
   const sectionHeader = {
-    title: "Autopilot - from idea to production",
-    paragraph:
-      "Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.",
+    title: "We love code",
+    paragraph: "OUR CULTURE IS AT THE HEART OF EVERYTHING WE DO.",
   };
 
   return (

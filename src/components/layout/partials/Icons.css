@@ -1,0 +1,28 @@
+.partner-area {
+  padding-bottom: 80px;
+}
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(-10deg);
+  }
+
+  20% {
+    transform: scale(0.95);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  80% {
+    transform: scale(0.95);
+  }
+}
+
+.icon {
+  display: inline-block;
+  padding: 20px;
+  animation: swing 5s infinite ease-in-out;
+}

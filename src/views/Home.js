@@ -8,7 +8,7 @@ import WorkwWithUs from "../components/sections/WorkwWithUs";
 import WorkWithUs2 from "../components/sections/WorkWithUs2";
 import Testimonial from "../components/sections/Testimonial";
 import Cta from "../components/sections/Cta";
-import Technology from "../components/sections/Technology";
+import Icons from "../components/layout/partials/Icons";
 
 const Home = () => {
   return (
@@ -39,8 +39,8 @@ const Home = () => {
         imageFill
         className="illustration-section-02"
       />
-      <Technology topDivider />
       <Testimonial topDivider />
+      <Icons topDivider />
 
       <Cta split />
     </>
