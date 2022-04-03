@@ -68,8 +68,8 @@ const FeatureSplit2 = ({
                 className="split-item-content center-content-mobile reveal-from-left"
                 data-reveal-container=".split-item"
               >
-                <h3 className="mt-0 mb-12">Challenges</h3>
-                <p className="m-0">
+                <h3 className="">Challenges</h3>
+                <p className="">
                   Building a financial platform from the ground up in a
                   regulated area such as finance is never a simple task.
                   Building security and auditing into a fast-moving platform
@@ -80,7 +80,7 @@ const FeatureSplit2 = ({
                 className="split-item-content center-content-mobile reveal-from-right"
                 data-reveal-container=".split-item"
               >
-                <h3 className="mt-0 mb-12">Technology</h3>
+                <h3 className="">Technology</h3>
                 <div className="icons">
                   <span>
                     {" "}
